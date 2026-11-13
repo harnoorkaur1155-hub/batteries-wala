@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Batteries Wala | Delhi</title>
+<meta name="description" content="Batteries Wala, Ramesh Nagar Delhi. Car, bike, inverter and EV battery enquiries.">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#07111f;color:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:92%;max-width:1150px;margin:auto}
+header{background:#07111ff5;border-bottom:1px solid #263d57;position:sticky;top:0;z-index:100}
+nav{height:75px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:23px;font-weight:900}
+.logo span{color:#40d8ff}
+.links{display:flex;gap:18px}
+.links a{font-size:14px;color:#dce8f6}
+.links a:hover{color:#40d8ff}
+.btn{display:inline-block;padding:12px 18px;border-radius:9px;font-weight:bold;text-align:center;transition:.2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.15)}
+.blue{background:#168cff;color:white}
+.green{background:#159e60;color:white}
+.outline{border:1px solid #52708d;color:white}
+.menu{display:none;background:none;border:0;color:white;font-size:28px}
+.hero{padding:85px 0;background:radial-gradient(ellipse at 85% 20%,#174c78,transparent 45%)}
+.heroGrid{display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}
+.eyebrow{color:#40d8ff;letter-spacing:3px;font-size:13px;font-weight:bold}
+h1{font-size:clamp(42px,6vw,68px);line-height:1.1;margin:17px 0}
+h1 span{color:#40d8ff}
+p{color:#b5c4d6}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.heroCard{background:linear-gradient(140deg,#183958,#0d1b2d);border:1px solid #345879;border-radius:22px;padding:30px;text-align:center}
+.battery{font-size:95px}
+.heroCard h2{margin:8px}
+.stats{display:flex;gap:12px;margin-top:25px}
+.stat{background:#ffffff10;border-radius:10px;padding:12px;flex:1;text-align:center}
+.stat strong{display:block;color:#40d8ff;font-size:20px}
+section{padding:70px 0}
+.dark{background:#0b1a2b}
+.heading{text-align:center;margin-bottom:35px}
+.heading h2{font-size:36px;margin:8px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#102239;padding:25px;border:1px solid #294662;border-radius:16px;transition:.2s}
+.card:hover{border-color:#40d8ff;transform:translateY(-5px)}
+.cardIcon{font-size:40px}
+.card h3{margin:10px 0}
+.card p{font-size:14px;margin-bottom:18px}
+.card .btn{width:100%}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service{background:#102239;border:1px solid #294662;padding:23px;border-radius:15px}
+.service h3{margin:10px 0}
+.aboutGrid,.contactGrid{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}
+.aboutBox{background:linear-gradient(140deg,#17416a,#102239);padding:35px;border-radius:20px;text-align:center}
+.aboutBox div{font-size:80px}
+.check{margin:12px 0}
+.check span{color:#40d8ff}
+.review{background:#102239;padding:25px;border:1px solid #294662;border-radius:15px}
+.stars{color:#ffc84a;font-size:22px}
+.contactBox{background:#102239;padding:25px;border-radius:15px;border:1px solid #294662}
+.contactBox h3{margin-bottom:12px}
+.phone{padding:16px 0;border-bottom:1px solid #34506b}
+.phoneActions{display:flex;gap:10px;flex-wrap:wrap;margin-top:9px}
+.phoneActions .btn{font-size:13px;padding:8px 13px}
+.address{margin:12px 0}
+.map{width:100%;height:260px;border:0;border-radius:12px;margin-top:15px}
+details{background:#102239;border:1px solid #294662;border-radius:10px;padding:18px;margin:10px auto;max-width:800px}
+summary{cursor:pointer;font-weight:bold}
+details p{padding-top:10px}
+footer{text-align:center;background:#030912;padding:30px;color:#b5c4d6}
+.float{position:fixed;right:16px;bottom:18px;z-index:90;display:flex;flex-direction:column;gap:10px}
+.float a{height:50px;width:50px;border-radius:50%;display:grid;place-items:center;font-size:23px;box-shadow:0 4px 15px #0008}
+.float .wa{background:#159e60}
+.float .call{background:#168cff}
+
+@media(max-width:800px){
+ .links{display:none;position:absolute;top:75px;left:0;right:0;background:#07111f;padding:20px;flex-direction:column}
+ .links.show{display:flex}
+ .menu{display:block}
+ nav>.btn{display:none}
+ .heroGrid,.aboutGrid,.contactGrid{grid-template-columns:1fr}
+ .grid,.services{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:520px){
+ .grid,.services{grid-template-columns:1fr}
+ .stats{gap:5px}
+ .stat{padding:8px 4px}
+ .stat strong{font-size:16px}
+ section{padding:55px 0}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav class="container">
+<a class="logo" href="#home">BATTERIES <span>WALA.</span></a>
+
+<div class="links" id="links">
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</div>
+
+<a class="btn blue" href="tel:+919868142623">Call Now</a>
+<button class="menu" onclick="document.getElementById('links').classList.toggle('show')">☰</button>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div class="container heroGrid">
+<div>
+<div class="eyebrow">POWERING EVERY JOURNEY</div>
+<h1>Reliable Power.<br><span>Every Journey.</span></h1>
+<p>Your trusted destination for car batteries, bike batteries, inverter batteries, AGM and EV battery enquiries.</p>
+
+<div class="actions">
+<a class="btn blue" href="#products">Explore Products →</a>
+<a class="btn green" href="https://wa.me/919891220020?text=Hello%20Batteries%20Wala">WhatsApp Us</a>
+<a class="btn outline" href="#contact">Find Our Shop</a>
+</div>
+
+<div class="stats">
+<div class="stat"><strong>5.0 ★</strong><small>Google rating</small></div>
+<div class="stat"><strong>21+</strong><small>Reviews</small></div>
+<div class="stat"><strong>Delhi</strong><small>Ramesh Nagar</small></div>
+</div>
+</div>
+
+<div class="heroCard">
+<div class="battery">🔋</div>
+<h2>BATTERIES WALA</h2>
+<p>Car • Bike • Inverter • EV</p>
+<p style="margin-top:15px">Quality batteries. Helpful service. Reliable power.</p>
+</div>
+</div>
+</section>
+
+<section id="products">
+<div class="container">
+<div class="heading">
+<div class="eyebrow">WHAT WE OFFER</div>
+<h2>Our Battery Range</h2>
+<p>Choose your battery category and enquire directly.</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="cardIcon">🚗</div>
+<h3>Car Batteries</h3>
+<p>Battery options for different car models and requirements.</p>
+<a class="btn blue" href="https://wa.me/919891220020?text=I%20need%20information%20about%20car%20batteries">Enquire Now</a>
+</div>
+
+<div class="card">
+<div class="cardIcon">🏍️</div>
+<h3>Bike Batteries</h3>
+<p>Options for scooters, motorcycles and two-wheelers.</p>
+<a class="btn blue" href="https://wa.me/919891220020?text=I%20need%20information%20about%20bike%20batteries">Enquire Now</a>
+</div>
+
+<div class="card">
+<div class="cardIcon">🏠</div>
+<h3>Inverter Batteries</h3>
+<p>Battery options for home and office power backup.</p>
+<a class="btn blue" href="https://wa.me/919891220020?text=I%20need%20information%20about%20inverter%20batteries">Enquire Now</a>
+</div>
+
+<div class="card">
+<div class="cardIcon">⚡</div>
+<h3>EV Batteries</h3>
+<p>Ask about electric vehicle battery requirements.</p>
+<a class="btn blue" href="https://wa.me/919891220020?text=I%20need%20information%20about%20EV%20batteries">Enquire Now</a>
+</div>
+
+<div class="card">
+<div class="cardIcon">🔋</div>
+<h3>AGM Batteries</h3>
+<p>Explore AGM battery options and compatibility.</p>
+<a class="btn blue" href="https://wa.me/919891220020?text=I%20need%20information%20about%20AGM%20batteries">Enquire Now</a>
+</div>
+
+<div class="card">
+<div class="cardIcon">🏷️</div>
+<h3>Battery Brands</h3>
+<p>Ask about Exide, Amaron and available options.</p>
+<a class="btn blue" href="https://wa.me/919891220020?text=Please%20share%20available%20battery%20brands">Ask for Brands</a>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="dark" id="services">
+<div class="container">
+<div class="heading">
+<div class="eyebrow">HOW WE HELP</div>
+<h2>Our Services</h2>
+<p>Support for your battery requirements.</p>
+</div>
+
+<div class="services">
+<div class="service"><div class="cardIcon">🔍</div><h3>Battery Testing</h3><p>Ask about checking your existing battery condition.</p></div>
+<div class="service"><div class="cardIcon">🔧</div><h3>Battery Replacement</h3><p>Get guidance when your old battery needs replacement.</p></div>
+<div class="service"><div class="cardIcon">💬</div><h3>Battery Guidance</h3><p>Share your vehicle model to discuss suitable options.</p></div>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container aboutGrid">
+<div>
+<div class="eyebrow">ABOUT OUR SHOP</div>
+<h2 style="font-size:36px;margin:10px 0">Welcome to Batteries Wala</h2>
+<p>We help customers explore battery options for cars, two-wheelers, inverters and more. Contact us for product availability and compatibility guidance.</p>
+<div class="check"><span>✓</span> Multiple battery categories</div>
+<div class="check"><span>✓</span> Call and WhatsApp enquiries</div>
+<div class="check"><span>✓</span> Convenient Ramesh Nagar location</div>
+<a class="btn blue" href="#contact">Contact Our Shop</a>
+</div>
+<div class="aboutBox">
+<div>🔋</div>
+<h2>Batteries Wala</h2>
+<p>Powering your everyday journeys.</p>
+</div>
+</div>
+</section>
+
+<section class="dark" id="reviews">
+<div class="container">
+<div class="heading">
+<div class="eyebrow">CUSTOMER FEEDBACK</div>
+<h2>Google Reviews</h2>
+<p>Visit our Google listing to read customer feedback.</p>
+</div>
+<div class="review">
+<div class="stars">★★★★★</div>
+<h3>Rated 5.0 on Google</h3>
+<p>21 reviews are shown on the shop listing.</p>
+<br>
+<a class="btn blue" href="https://www.google.com/search?q=Batteries+Wala+Ramesh+Nagar+Delhi" target="_blank">View Google Listing ↗</a>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="heading">
+<div class="eyebrow">GET IN TOUCH</div>
+<h2>Visit or Contact Us</h2>
+<p>Call or WhatsApp either number.</p>
+</div>
+
+<div class="contactGrid">
+<div class="contactBox">
+<h3>Contact Numbers</h3>
+
+<div class="phone">
+<strong>9868142623</strong>
+<div class="phoneActions">
+<a class="btn blue" href="tel:+919868142623">📞 Call</a>
+<a class="btn green" href="https://wa.me/919868142623" target="_blank">WhatsApp</a>
+</div>
+</div>
+
+<div class="phone">
+<strong>9891220020</strong>
+<div class="phoneActions">
+<a class="btn blue" href="tel:+919891220020">📞 Call</a>
+<a class="btn green" href="https://wa.me/919891220020" target="_blank">WhatsApp</a>
+</div>
+</div>
+
+<h3 style="margin-top:20px">Shop Address</h3>
+<p class="address">Metro Pillar No. 348, New Market, A7, Ramesh Nagar, New Delhi – 110015</p>
+<a class="btn blue" href="https://www.google.com/maps/search/?api=1&query=Metro+Pillar+348+New+Market+A7+Ramesh+Nagar+New+Delhi+110015" target="_blank">📍 Get Directions</a>
+
+<iframe class="map" title="Shop map" loading="lazy" src="https://maps.google.com/maps?q=Ramesh%20Nagar%20New%20Delhi&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+</div>
+
+<div class="contactBox">
+<h3>Quick Enquiry</h3>
+<p>Choose a number to send your enquiry on WhatsApp.</p>
+<div style="display:grid;gap:13px;margin-top:20px">
+<a class="btn green" href="https://wa.me/919868142623?text=Hello%20Batteries%20Wala%2C%20I%20have%20a%20battery%20enquiry." target="_blank">WhatsApp 9868142623</a>
+<a class="btn green" href="https://wa.me/919891220020?text=Hello%20Batteries%20Wala%2C%20I%20have%20a%20battery%20enquiry." target="_blank">WhatsApp 9891220020</a>
+<a class="btn outline" href="https://www.google.com/search?q=Batteries+Wala+Ramesh+Nagar+Delhi" target="_blank">Find us on Google</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="dark" id="faq">
+<div class="container">
+<div class="heading">
+<div class="eyebrow">HELP CENTRE</div>
+<h2>Frequently Asked Questions</h2>
+</div>
+
+<details>
+<summary>Which types of batteries can I enquire about?</summary>
+<p>Car, bike, inverter, AGM and EV battery options.</p>
+</details>
+
+<details>
+<summary>How can I check battery availability?</summary>
+<p>Call or WhatsApp either of the two contact numbers.</p>
+</details>
+
+<details>
+<summary>Where is Batteries Wala located?</summary>
+<p>Metro Pillar No. 348, New Market, A7, Ramesh Nagar, New Delhi – 110015.</p>
+</details>
+
+<details>
+<summary>Can I ask about my vehicle's battery?</summary>
+<p>Yes. Share your vehicle make, model and year through WhatsApp.</p>
+</details>
+</div>
+</section>
+
+<footer>
+<a class="logo" href="#home">BATTERIES <span>WALA.</span></a>
+<p>Car Batteries • Bike Batteries • Inverter • AGM • EV</p>
+<p>Ramesh Nagar, New Delhi – 110015</p>
+<p style="margin-top:12px">© <span id="year"></span> Batteries Wala. All rights reserved.</p>
+</footer>
+
+<div class="float">
+<a class="wa" href="https://wa.me/919891220020" target="_blank" aria-label="WhatsApp">W</a>
+<a class="call" href="tel:+919868142623" aria-label="Call">☎</a>
+</div>
+
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+
+document.querySelectorAll(".links a").forEach(function(link){
+link.addEventListener("click",function(){
+document.getElementById("links").classList.remove("show");
+});
+});
+</script>
+
+</body>
+</html>
